@@ -46,8 +46,7 @@ public class MainActivity extends AppCompatActivity {
         displayDatabaseInfo();
     }
 
-    private void displayDatabaseInfo() {
-
+    private Cursor readData (){
         SQLiteDatabase db = mDbHelper.getReadableDatabase();
 
         String[] projection = {BooksContract.BooksEntry._ID,
@@ -59,8 +58,12 @@ public class MainActivity extends AppCompatActivity {
         //String selection = PetContract.PetsEntry.COLUMN_PET_GENDER + " = ?";
         // String selectionArgs = new String[] {PetContract.PetsEntry.GENDER_FEMALE};
         Cursor cursor = db.query(TABLE_NAME, projection, null, null, null, null, null);
+        return cursor;
+    }
 
-        TextView displayView = (TextView) findViewById(R.id.text_view_books);
+    private void displayDatabaseInfo() {
+       Cursor cursor = readData();
+       TextView displayView = (TextView) findViewById(R.id.text_view_books);
 
         try {
             displayView.setText("The books table contains " + cursor.getCount() + " books.\n\n");

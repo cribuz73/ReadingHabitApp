@@ -17,4 +17,8 @@
     <string name="status_not_read">Not read</string>
     <string name="status_reading_now">Reading now</string>
 
+    <string name="error_saving">Error with saving book</string>
+    <string name="book_saved">Book saved with row id</string>
+
+
 </resources>
