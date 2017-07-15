@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="array_status_options">
+        <item>@string/status_not_read</item>
+        <item>@string/status_reading_now</item>
+        <item>@string/status_read</item>
+    </string-array>
+
+</resources>

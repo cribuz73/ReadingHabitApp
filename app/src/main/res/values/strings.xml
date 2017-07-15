@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Reading Habit App</string>
+    <string name="action_settings">Delete all books</string>
+    <string name="title">My bookshelf</string>
+    <string name="delete">Delete</string>
+    <string name="save">Save</string>
+    <string name="book_editor">Add new book</string>
+
+
+    <string name="book_author">Author</string>
+    <string name="book_title">Title</string>
+    <string name="book_publisher">Publisher</string>
+    <string name="book_year">Year</string>
+    <string name="book_status">Status</string>
+
+    <string name="status_read">Read</string>
+    <string name="status_not_read">Not read</string>
+    <string name="status_reading_now">Reading now</string>
+
+</resources>
